@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn tập Html Css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <style type="text/css">
+        .container{
+            margin: 0 auto;
+            padding: 0;
+            width:1340px;
+            height:3400px;
+            background-color: rgb(255, 253, 255);
+            box-sizing: border-box;
+        }
+        #home{
+            width: 100%;
+            height: 650px;
+        }
+        #home #left{
+            width: 50%;
+            float:left;
+        }
+        #home #right{
+            width: 50%;
+            height: 100%;
+            background-color: #f1e2d7;
+            float: right;
+        }
+        #menu ul{
+            list-style-type: none;
+            text-align: center;
+        }
+        #menu li{
+            font-weight: bold;
+            color: black;
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: -2px;
+            font-size: 14px;
+            font-family: 'Source Sans Pro', sans-serif; 
+        }
+        #menu a {
+        text-decoration: none;
+        color: rgb(153, 151, 151);
+        display: block;        
+        }
+        #menu a:hover{
+            color: rgb(231, 200, 143) ;
+        }
+        #content{
+            margin: 0 auto;
+            width: 600px;
+            font-size: 18px;
+        }
+        #content a{
+            text-decoration: none;
+            color: #000;
+            background-color: #f1e2d7;
+            padding: 15px 50px;
+            font-size:14px;
+            border:black 3px solid;
+            border-radius: 50px ;
+            transition: all 0.2s ease-in-out;
+        }
+        #content a:hover{
+            border: none;
+            background-color: rgb(253, 189, 92);
+        }
+        #about_me{
+            width: 100%;
+            height: 370px;
+        }
+        #about_l{
+            margin-top: -3px;
+            float:left;
+            width: 50%;
+            height: 100%;
+            background-color: #fff;
+        }
+        #about_r{
+            float: right;
+            width: 50%;
+            height:100%;
+            background-color: rgb(253, 189, 92);
+        }
+        #service{
+            width: 100%;
+            height: 335px;
+            opacity: 0.9;
+            margin: 0 auto;
+            text-align:center;
+        }
+        .ruler{
+            width: 25%;
+            height: 335px;
+            position: absolute;
+            color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #interface{
+            background-color: rgb(253, 189, 92);
+        }
+        #media{
+            background-color: rgb(209, 109, 69);
+            margin-left: 333px;
+            
+        }
+        #mobile{
+            background-color: rgb(20, 20, 20);
+            margin-left: 670px;
+
+        }
+        #coding{
+            background-color: rgb(255, 255, 255);
+            margin-left: 1005px;
+            color: black;
+        }
+        #experiences{
+            width: 100%;
+            height: 385px;
+            background-color: rgb(211, 111, 71);
+            opacity: 0.9; 
+        }
+        #exp_l{
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+        #exp_r{
+            float: right;
+            width: 50%;
+            color: #fff;
+        }
+        .content{
+            width:90%;
+            height: 300px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        #education{
+            width: 100%;
+            height: 385px;
+            background-color: skyblue;
+            color: #fff;
+            opacity: 0.9;
+        }
+        #edu_l{
+            float: left;
+            background-color: rgb(253, 189, 92);
+            width: 50%;
+            height: 100%;
+        }
+        #edu_r{
+            float: right;
+            background-color: rgb(255, 255, 255);
+            width: 50%;
+            height: 100%;
+        }
+        #overlay{
+            width: 100%;
+            height: 400px;
+            opacity: 0.8;
+            background-image: url(../img/quotes-bg.jpg);
+            text-align:center ;
+            color: #fff;
+        }
+        #contact{
+            width: 100%;
+            height: 570px;
+            background-color: rgb(250, 132, 85);
+            
+        }
+        #contact_l{
+            width: 45%;
+            height: 75%;
+            margin-top: 40px;
+            margin-left: 40px;
+            float: left;
+            color: #fff;
+        }
+        #contact input{
+            width: 520px;
+            border:none;
+            background:transparent ;
+            border-bottom:rgb(253, 189, 92) 1px solid ;
+            padding: 15px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #contact textarea{
+            border:none;
+            background:transparent ;
+            font-size: 18px;
+            border-bottom:rgb(253, 189, 92) 1px solid ;
+        }
+        #contact a{
+            text-decoration: none;
+            color: #000;
+            background-color: #ffffff;
+            padding: 15px 100px;
+            font-size: 14px;
+            border-radius: 80px;
+            font-size: 18px;
+            color: rgb(121, 118, 118);
+            transition: all 0.1s ease-in-out;
+            
+        }   
+        #contact a:hover{
+            background-color:rgb(250, 132, 85) ;
+            border: rgb(255, 255, 255) 3px solid;
+            border-radius: 80px;
+            font-size: 18px;
+            color: #fff;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="home">
+            <div id="left">
+                <img src="../img/home-img.jpg" alt="home" width="100%" height="650px">
+            </div>
+            <div id="right">
+                <div id="menu">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about_me">ABOUT ME</a></li>
+                        <li><a href="#experiences">EXPERIENCES</a></li>
+                        <li><a href="#overlay">TESTIMONIAL</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>  
+                <div id="content"><br>
+                    <p style="opacity: 0.6;">WELCOME TO MY WEBSITE</p>
+                    <p style="font-size: 38px;">Hello, I am <b>Stimulus</b> currently based in New York city.</p>
+                    <p style="opacity: 0.6;">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus 
+                        interdum in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. 
+                        Vestibulum id accumsan quam.</p><br><br><br><br>
+                    <a href="#about_me">GET START</a>                    
+                </div>
+            </div>
+        </div>
+        <div id="about_me">
+            <div id="about_r">
+                <div id="left_img" style="float: left;width: 50%;height: 370px;">
+                    <img src="../img/about-img.jpg" width="100%" height="100%" alt="" >
+                </div>
+                <div id="right_skills"  style="float: right;width: 50%;height: 370px; font-family:cursive;opacity: 0.8;">
+                    <div id="skills" style="width: 80%; height: 90%; margin: 0 auto;margin-top: 40px;color: #fff;">
+                        <h1>My Skills</h1>
+                        <p style="font-size: 20px;">Photoshop . HTML CSS JS . Web Design</p>
+                        <p style="color: #000;">Frontend Design </p>
+                        <p style="color: #000;"> Backend Processing</p>
+                        <p style="color: #000;"> HTML5 & CSS3</p>               
+                    </div>
+                </div>               
+            </div>
+            <div id="about_l">
+                <div id="donec" style="width:90%;height: 80%; margin-top: 20px;margin-left: 20px;font-size: 18px;";>
+                    <h1>Donec auctor </h1>
+                    <p style="color: rgb(253, 189, 92);">Sed vulputate vitae diam quis bibendum</p>
+                    <p style="color: rgb(199, 198, 198);">
+                        Phasellus vulputate tellus nec tortor varius elementum.
+                        Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem. Mauris convallis eros massa. <br>
+                        Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam bibendum, sem nibh mollis erat, quis porta odio odio at velit.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <div id="service">
+            <div class="ruler" id="interface">
+                <i class="fa fa-desktop fa-3x" style="font-size: 42px;margin-top: 40px;"></i>
+                <h2>Interface Design</h2>
+                <p style="font-size: 20px;">Phasellus vulputate tellus nec <br> tortor varius elementum. Curabitur at pulvinar ante.</p>
+            </div>
+            <div class="ruler" id="media">
+                <i class="fa fa-paper-plane fa-3x" style="font-size: 42px;margin-top: 40px;"></i>
+                <h2>Media Strategy</h2>
+                <p style="font-size: 20px;">Curabitur at pulvinar ante.<br> Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+            </div>
+            <div class="ruler" id="mobile">
+                <i class="fa fa-table fa-3x" style="font-size: 42px;margin-top: 40px;"></i>
+                <h2>Mobile App</h2>
+                <p style="font-size: 20px;">Mauris convallis eros massa,<br> vitae euismod arcu tempus ut. Quisque viverra iaculis.</p>
+            </div>
+            <div class="ruler" id="coding">
+                <i class="fab fa-html5 " style="font-size: 42px;margin-top: 40px;"></i>
+                <h2>Coding</h2>
+                <p style="font-size: 20px;">Mauris convallis eros massa,<br> vitae euismod arcu tempus ut. Quisque viverra iaculis.</p>
+            </div>
+        </div>
+        <div id="experiences">
+            <div id="exp_l">
+                <img src="../img/experience-img.jpg" style="width:100%; height:100%;" alt="">
+            </div>
+            <div id="exp_r">
+                <div class="content"> 
+                    <h1>My Experiences</h1>
+                    <p>Previous companies and my tasks</p>
+                    <div style="float: left;width:20%;">
+                        <p><i class="fa fa-laptop fa-3x"></i></p><br>
+                        <p><i class="fa fa-laptop fa-3x"></i></p>
+                    </div>
+                    <div style="float: right;width: 80%;">
+                        <span style="font-size: 32px;">Graphic Designer </span><span style="color: rgb(97, 59, 42);">2014 Jul - 2015 Sep</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                        <span style="font-size: 32px;">Web Designer  </span><span style="color: rgb(97, 59, 42);">2015 Oct - 2017 Jan</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="education">
+            <div id="edu_l">
+                <div class="content">
+                    <h1>My Education</h1>
+                    <p>In cursus orci non ipsum gravida dignissim</p>
+                    <div style="float: left;width:20%;">
+                        <p><i class="fa fa-laptop fa-3x"></i></p><br>
+                        <p><i class="fa fa-laptop fa-3x"></i></p>
+                    </div>
+                    <div style="float: right;width: 80%;">
+                        <span style="font-size: 32px;">Master in Design </span><span style="color: rgb(97, 59, 42);">2012 Jan - 2014 May</span>
+                        <p>Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque.</p><br>
+                        <span style="font-size: 32px;">Bachelor of Arts </span><span style="color: rgb(97, 59, 42);">2008 May - 2011 Dec</span>
+                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="edu_r">
+                <img src="../img/education-img.jpg" style="width:100%; height:100%;" alt="">
+            </div>
+        </div>
+        <div id="overlay">
+            <i class="wow fadeInUp fa fa-star animated fa-3x" style="margin-top: 70px; color: #fff;"></i><br>
+            <p style="font-size: 36px ;">Proin lobortis eu diam et facilisis. Fusce nisi nibh,<br> molestie in vestibulum quis, auctor et orci.</p>
+            <p style="font-size: 18px ;">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+        </div>
+        <div id="contact">
+            <div id="contact_l">
+                <span style="font-size: 36px;">Say hello.. </span><br><br>
+                <span style="font-size: 18px;">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</span><br><br><br><br>
+                <input type="text" placeholder="Fullname"><br><br>
+                <input type="text" placeholder="Yourname"><br><br><br>
+                <textarea name="" id="" cols="53" rows="5" placeholder="Write to message..."></textarea><br><br><br><br>
+                <a href="" >Send</a>
+
+            </div>
+            <div id="contact_r">
+                <div id="contact_img" style="float: left;width: 25% ; height: 400px; margin-left: 27px;">
+                    <img src="../img/contact-img.jpg" alt="" width="100%"; height="100%">
+                </div>
+                <div id="address" style="float: right;width: 25%;height: 400px;background-color: rgb(0, 0, 0)">
+                    <div style="width: 80%;height: 90%;margin-left: 40px;color: #fff"><br>
+                        <p style="font-size: 28px;">Visit my office</p>
+                        <p>456 New Street 22000, New York City, USA</p><br>
+                        <p style="font-size: 28px;">Contact.</p>
+                        <i class="fa fa-phone" ></i> &nbsp;&nbsp;
+                        <span>01-0110-0220</span><br><br>
+                        <i class="fas fa-envelope-square"></i>&nbsp;&nbsp;
+                        <span style="color: rgb(253, 189, 92);">hello@company.co</span><br><br>
+                        <i class="fa fa-globe"></i>&nbsp;&nbsp;
+                        <span style="color: rgb(253, 189, 92);"> company.co</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width:100%; margin: 0 auto;text-align: center; color: gray;">
+            <p>Copyright © 2016 Your Company | Design: templatemo</p>
+            <p>
+                <a  class="fab fa-facebook fa-1x"></a>
+                <a  class="fab fa-twitter fa-1x "></a>
+                <a  class="fab fa-google-plus fa-1x"></a>
+                <a  class="fab fa-dribbble fa-1x"></a>
+                <a  class="fab fa-linkedin fa-1x"></a>
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

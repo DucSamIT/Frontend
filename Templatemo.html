@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templatemo</title>
+    <link rel="stylesheet" href="./Grid.css">
+    <link rel="stylesheet" href="./template.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /><!--font-awesome-->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .container{
+            text-align:left;
+        }
+        h1{
+            margin:0;
+        }
+        /* CSS Thêm bên ngoài*/
+        @media (max-width:739px){
+            #menu{
+                display: none;
+            }
+            .copyright{
+                display: none;
+            }
+
+            
+        }
+        @media only screen and (min-width:740px) and (max-width:1023px){
+            .home #content{
+                font-size: 22px;
+            }
+            .service p{
+                font-size: 24px;
+            }
+        }
+        .home{
+            height: 100vh;
+            padding: 20px 0;
+            
+        }
+        .home-img{
+            background-image: url(./img/home-img.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            background-position: 50% 50%;
+        }
+        .home-menu{
+            text-align: left;
+            /* margin-top: -32px; */
+            background-color: antiquewhite;
+            
+        }
+        #menu ul{
+            list-style-type: none;
+            text-align: center;
+        }
+        #menu li{
+            color: black;
+            display: inline-block;
+            height: 40px;
+            line-height: 50px;
+            font-size: 2vh;
+            padding-left: 15px;
+            font-weight: bold;
+            font-family: 'Source Sans Pro', sans-serif; 
+        }
+        #menu a {
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+            display: block;        
+        }
+        #menu a:hover{
+            color: rgb(231, 200, 143) ;
+        }
+        #content{
+            margin: 0 auto;
+            width: 100%;
+            font-size: 26px;
+        }
+        #content a{
+            text-decoration: none;
+            color: #000;
+            background-color: #f1e2d7;
+            padding: 15px 50px;
+            border:black 3px solid;
+            border-radius: 50px ;
+            transition: all 0.2s ease-in-out;
+        }
+        #content a:hover{
+            border: none;
+            background-color: rgb(253, 189, 92);
+        }
+        .my-skill{
+            height: 550px;
+
+        }
+        .skill-img{
+            background-image: url(./img/about-img.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        .skill-content{
+            background-color: orange;
+            opacity: 0.8;
+            padding: 20px 0;
+        }
+        .skills p{
+            font-size: 24px;
+        }
+        .skills{
+            width: 80%;
+            height: 80%;
+            margin: 0 auto;
+            text-align: left;
+            
+        }
+        .service{
+            height: 400px;
+            text-align: center;
+            font-size: 42px;
+            color: #fff;
+        }
+        .service p{
+            font-size: 26px;
+        }
+        .service h3{
+            font-size: 40px;
+            font-weight: normal;
+        }
+
+        .interface{
+            background-color: rgb(253, 189, 92);
+        }
+        .media{
+            background-color: rgb(209, 109, 69);
+            
+        }
+        .mobile{
+            background-color: rgb(20, 20, 20);
+
+        }
+        .coding{
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+        .exp{
+            height: 550px;
+            background-color: rgb(209, 109, 69);
+        }
+        .exp-img{
+            background-image: url(./img/experience-img.jpg);
+            background-size: cover;
+            
+        }
+        .exp-desc{
+            padding-left: 80px;
+            padding-top:  15px;
+            font-size: 20px;
+            color: #fff;
+        }
+        .edu{
+            height: 570px;
+            background-color: rgb(253, 189, 92);
+        }
+        .edu-img{
+            background-image: url(./img/education-img.jpg);
+            background-size: cover;
+            
+        }
+        .edu-desc{
+            padding-left: 80px;
+            padding-top:  15px;
+            color: #fff;
+        }
+        .edu p{
+            font-size: 22px;
+        }
+        .star-img{
+            height: 550px;
+            background-image: url(./img/quotes-bg.jpg);
+            background-size: cover;
+            text-align: center;
+            opacity: 0.9;
+        }
+        .star{
+            color: #fff;
+        }
+        .contact{
+            height:800px;
+        }
+        .contact-img{
+            height: 800px;
+            background-color: aqua;
+            background-image: url(./img/contact-img.jpg);
+            background-position: 50% 50%;
+        }
+        .say-hello{
+            padding: 50px 50px;
+            color: #fff;
+            background-color: rgb(250, 132, 85);
+            height: 100%;
+         
+        }
+        .say-hello input{
+            width: 520px;
+            border:none;
+            background:transparent ;
+            border-bottom:rgb(253, 189, 92) 1px solid ;
+            padding: 15px;
+            font-size: 32px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .say-hello textarea{
+            border:none;
+            background:transparent ;
+            font-size: 28px;
+            border-bottom:rgb(253, 189, 92) 1px solid ;
+        }
+        .say-hello a{
+            text-decoration: none;
+            color: #000;
+            background-color: #ffffff;
+            padding: 15px 100px;
+            font-size: 14px;
+            border-radius: 80px;
+            font-size: 28px;
+            color: rgb(121, 118, 118);
+            transition: all 0.1s ease-in-out;
+            
+        }   
+        .say-hello a:hover{
+            background-color:rgb(250, 132, 85) ;
+            border: rgb(255, 255, 255) 3px solid;
+            border-radius: 80px;
+            color: #fff;
+        }
+        
+        .visit{
+            background-color: #000;
+            height: 800px;
+        }
+        .visit span{
+            font-size: 30px;
+        }
+        .copyright{
+            height: 500px;
+            background-color: #fff;
+            text-align: center;
+            font-size: 28px;
+            padding-top: 150px ;
+            color: gray;
+            opacity: 0.8;
+        } 
+        
+    </style>
+</head>
+<body>
+    <div class="container"><!--Bỏ GRID đi là thành ra Full Viền-->
+        <div class="row no-gutters"><!--ROW là sắp xếp theo chiều ngang(HÀNG)- Bỏ đi thì các div hiện thị theo Cột-->
+            <div class="col l-6 m-6 c-12">
+                <div class="home home-img"></div>
+            </div>
+
+            <div class="col l-6 m-6 c-12">
+                <div class="home home-menu">
+                    <div style="width:80%; height:80%; margin:0 auto;">
+                        <div id="menu">
+                            <ul>
+                                <li><a href="#home">HOME</a></li>
+                                <li><a href="#about_me">ABOUT ME</a></li>
+                                <li><a href="#experiences">EXPERIENCES</a></li>
+                                <li><a href="#overlay">TESTIMONIAL</a></li>
+                                <li><a href="#contact">CONTACT</a></li>
+                            </ul>
+                        </div>  
+                        <div id="content"><br>
+                            <p style="opacity: 0.6;">WELCOME TO MY WEBSITE</p>
+                            <p style="font-size: 38px;">Hello, I am <b>Stimulus</b> currently based in New York city.</p>
+                            <p style="opacity: 0.6;">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus 
+                                interdum in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. 
+                                Vestibulum id accumsan quam.</p><br><br><br><br>
+                            <a href="#about_me">GET START</a>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row no-gutters">
+            <div class="col l-6 m-12">
+                <div class="row no-gutters">
+                    <div class="my-skill">
+                        <div class="donec">
+                            <div style="width:90%;height: 80%;font-size: 26px;margin-top: 5%;margin-left: 5%;";>
+                                <h1>Donec auctor </h1>
+                                <p style="color: rgb(253, 189, 92);">Sed vulputate vitae diam quis bibendum</p>
+                                <p style="color: rgb(199, 198, 198);">
+                                    Phasellus vulputate tellus nec tortor varius elementum.
+                                    Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem. Mauris convallis eros massa. <br><br>
+                                    Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam bibendum, sem nibh mollis erat, quis porta odio odio at velit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+
+            </div>
+            <div class="col l-6 m-12 c-12">
+                <div class="row no-gutters ">
+                    <div class="col l-6 m-6 c-12">
+                        <div class="my-skill skill-img">
+                        </div>
+                    </div>
+                    <div class="col l-6 m-6 c-12">
+                        <div class="my-skill skill-content">
+                                <div class="skills">
+                                    <p style="font-size: 46px;color: #fff;">My Skills</p>
+                                    <p style="font-size: 30px;color: #fff;">Photoshop . HTML CSS JS . Web Design</p>
+                                    <p style="color: #000;font-weight: bold;">Frontend Design </p>
+                                    <div class="progress" style="width: 100%; height: 3px; background-color: #fff;">
+                                        <div style="width: 90%;height: 100%; background-color: #000;"></div>
+                                    </div>
+                                    <p style="color: #000;font-weight: bold;"> Backend Processing</p>
+                                    <div class="progress" style="width: 100%; height: 3px; background-color: #fff;">
+                                        <div style="width: 70%;height: 100%; background-color: #000;"></div>
+                                    </div>
+                                    <p style="color: #000;font-weight: bold;"> HTML5 & CSS3</p>
+                                    <div class="progress" style="width: 100%; height: 3px; background-color: #fff;">
+                                        <div style="width: 80%;height: 100%; background-color: #000;"></div>
+                                    </div>
+                                </div>               
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col l-3 m-6 c-12">
+                <div class="service interface">
+                    <i class="fa fa-desktop fa-2x" style="font-size: 62px;margin-top: 40px;"></i>
+                    <h3>Interface Design</h3>
+                    <p>Phasellus vulputate tellus nec <br> tortor varius elementum. Curabitur <br> at pulvinar ante.</p>
+                </div>
+            </div>
+            <div class="col l-3 m-6 c-12">
+                <div class="service media">
+                    <i class="fa fa-paper-plane fa-2x" style="font-size: 62px;margin-top: 40px;"></i>
+                    <h3>Media Strategy</h3>
+                    <p>Curabitur at pulvinar ante.<br> Duis dui urna, faucibus eget felis eu,<br> iaculis congue sem.</p>
+                </div>
+            </div>
+            <div class="col l-3 m-6 c-12">
+                <div class="service mobile">
+                    <i class="fa fa-table fa-2x" style="font-size: 62px;margin-top: 40px;"></i>
+                    <h3>Mobile App</h3>
+                    <p>Mauris convallis eros massa,<br> vitae euismod arcu tempus ut.Quisque <br> viverra iaculis.</p>
+                </div>
+            </div>
+            <div class="col l-3 m-6 c-12">
+                <div class="service coding">
+                    <i class="fab fa-html5 " style="font-size: 62px;margin-top: 40px;"></i>
+                    <h3>Coding</h3>
+                    <p>Mauris convallis eros massa,<br> vitae euismod arcu tempus ut. Quisque <br> viverra iaculis.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col l-6 m-12 c-12">
+                <div class="exp exp-img"></div>
+            </div>
+            <div class="col l-6 m-12 c-12">
+                <div class="exp">
+                    <div class="exp-desc">
+                        <p style="font-size: 52px;">My Experiences</p>
+                        <p>Previous companies and my tasks</p>
+                        <div style="float: left;width:20%;">
+                            <p><i class="fa fa-laptop fa-3x"></i></p><br>
+                            <p><i class="fa fa-laptop fa-3x"></i></p>
+                        </div>
+                        <div style="float: right;width: 80%;">
+                            <span style="font-size: 32px;">Graphic Designer </span><span style="color: rgb(97, 59, 42);">2014 Jul - 2015 Sep</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                            <span style="font-size: 32px;">Web Designer  </span><span style="color: rgb(97, 59, 42);">2015 Oct - 2017 Jan</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col l-6 m-12 c-12">
+                <div class="edu">
+                    <div class="edu-desc">
+                        <p style="font-size: 52px;">My Education</p>
+                        <p>In cursus orci non ipsum gravida dignissim</p>
+                        <div style="float: left;width:20%;">
+                            <p><i class="fa fa-laptop fa-3x"></i></p><br>
+                            <p><i class="fa fa-laptop fa-3x"></i></p>
+                        </div>
+                        <div style="float: right;width: 80%;">
+                            <span style="font-size: 32px;">Master in Design </span><span style="color: rgb(97, 59, 42);">2012 Jan - 2014 May</span>
+                            <p>Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien <br> id orci ullamcorper dignissim eu in neque.</p><br>
+                            <span style="font-size: 32px;">Bachelor of Arts </span><span style="color: rgb(97, 59, 42);">2008 May - 2011 Dec</span>
+                            <p>Orci varius natoque penatibus et magnis dis parturient montes, <br> nascetur ridiculus mus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l-6 m-12 c-12">
+                <div class="edu edu-img"></div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col l-12 m-12 c-12 star-img">
+                <div class="star">
+                    <i class="wow fadeInUp fa fa-star animated fa-3x" style="margin-top: 70px; color: #fff;"></i><br>
+                    <p style="font-size: 42px ;">Proin lobortis eu diam et facilisis. Fusce nisi nibh,<br> molestie in vestibulum quis, auctor et orci.</p>
+                    <p style="font-size: 24px ;">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col l-6 m-12 c-12 contact">
+                <div class="say-hello">
+                    <span style="font-size: 56px;">Say hello.. </span><br><br>
+                    <span style="font-size: 28px;">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</span><br><br><br><br>
+                    <input type="text" placeholder="Fullname"><br><br>
+                    <input type="text" placeholder="Yourname"><br><br><br>
+                    <textarea name="" id="" cols="35px" rows="5" placeholder="Write to message..."></textarea><br><br><br><br>
+                    <a href="" >Send</a>
+                </div>
+            </div>
+            <div class="col l-6 m-12 c-12 contact">
+                    <div class="row no-gutters">
+                        <div class="col l-6 m-6 c-12 contact contact-img"></div>
+                        <div class="col l-6 m-6 c-12 contact visit">
+                        <div style="margin-left: 40px;color: #fff"><br>
+                            <p style="font-size: 48px;">Visit my office</p>
+                            <p style="font-size: 24px;">456 New Street 22000, New York City,<br> USA</p><br>
+                            <p style="font-size: 38px;">Contact.</p>
+                            <i class="fa fa-phone fa-2x" ></i> &nbsp;&nbsp;
+                            <span>01-0110-0220</span><br><br>
+                            <i class="fas fa-envelope-square fa-2x"></i>&nbsp;&nbsp;
+                            <span style="color: rgb(253, 189, 92);">hello@company.co</span><br><br>
+                            <i class="fa fa-globe fa-2x"></i>&nbsp;&nbsp;
+                            <span style="color: rgb(253, 189, 92);"> company.co</span>
+                        </div>
+                        </div>
+                    </div>    
+            </div>
+            
+        </div>
+        <div class="row no-gutters">
+            <div class="col l-12 m-12 c-12">
+                <div class="copyright">
+                    <p>Copyright © 2016 Your Company | Design: <span style="color: rgb(250, 132, 85);">templatemo</span></p>
+                <p>
+                    <a  class="fab fa-facebook fa-1x"></a>
+                    <a  class="fab fa-twitter fa-1x "></a>
+                    <a  class="fab fa-google-plus fa-1x"></a>
+                    <a  class="fab fa-dribbble fa-1x"></a>
+                    <a  class="fab fa-linkedin fa-1x"></a>
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
